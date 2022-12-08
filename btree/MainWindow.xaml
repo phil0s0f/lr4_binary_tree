@@ -1,0 +1,25 @@
+﻿<Window x:Class="btree.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:btree"
+        mc:Ignorable="d"
+        Title="Бинарное дерево" Height="831" Width="1362" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,20,0,-6">
+        <Canvas x:Name="TreeCanvas" Margin="0,37,0,15" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" Width="1341">
+            <Canvas.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.271"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-1.402"/>
+                </TransformGroup>
+            </Canvas.RenderTransform>
+        </Canvas>
+        <Button x:Name="Add" Content="Добавить" HorizontalAlignment="Left" Margin="458,0,0,0" VerticalAlignment="Top" Width="110" RenderTransformOrigin="0.074,0.4" Click="Add_Click" FontSize="16"/>
+        <Button x:Name="Delete" Content="Удалить" HorizontalAlignment="Left" Margin="728,0,0,0" VerticalAlignment="Top" Width="110" Click="Delete_Click" FontSize="16" RenderTransformOrigin="0.399,-1.991"/>
+        <TextBox x:Name="NodeData" HorizontalAlignment="Left" Margin="592,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="108" Height="25" FontSize="16" FontWeight="Bold"/>
+
+    </Grid>
+</Window>
